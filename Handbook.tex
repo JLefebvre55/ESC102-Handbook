@@ -88,7 +88,7 @@ In my opinion, this is the ultimate design paradox: the wider the scope,
 the better you can diverge, but the less features and parameters are 
 shared between designs, and thus it becomes very difficult to converge 
 on one feature set on a detailed level.
-
+\pagebreak
 I also have certain biases when it comes to problem-solving. Since I have 
 been working with technology (programming, electronics, etc.) creatively 
 for most of my life, I am inclined to use it to develop solutions even 
@@ -118,8 +118,9 @@ problems, design teams, and startups in my first year than I had anticipated:
     agriculture solution, going to compete in the NASA/CSA Deep Space Food Challenge
 \end{itemize}
 
+\pagebreak
 \section{Products}
-\subsection{Praxis I PER}
+\subsection{Praxis I Personal Engineering Recommendation}
 This was my first attempt at engineering design. Since taking a number of 
 research and writing composition courses in highschool, I had become accustomed 
 to a certain style of writing. Although this writing style translated well 
@@ -127,9 +128,13 @@ into claim-argument form, I failed to meet some of the key targets of engineerin
 design, including employing the tools and frameworks provided for comparative 
 analysis of design candidates. The assessment of my performance reflected this.
 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth/2]{images/per.png}
+    \hfill
+    \caption{An extract from my PER - note the distinct lack of tables or figures in the metrics section. Odd \cite{per}.}
+\end{figure}
 
-
-PER extracts
 \subsection{Praxis I Framing - Design Brief}
 This was my second attempt at engineering design, and I took the framing 
 failures from the PER and applied new strategies to avoid those pitfalls. 
@@ -138,18 +143,32 @@ able to apply my passions for both plants and technology towards this design
 brief, leading to a greater degree of personal investment, which I believe 
 is key to good framing.
 
-Framing sprint analysis
-Design brief extracts
+% TODO: Framing sprint analysis
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth/2]{images/designbrief.png}
+    \hfill
+    \caption{An extract from my framing sprint team's design brief - note the proper use of metrics, with corresponding units, etc. \cite{designbrief}.}
+\end{figure}
+
 \subsection{Praxis I Diverging - Candidate Design Parameterization}
 During this sprint, I began to form the basis for my personal engineering 
 design process. Since the design brief provides both the necessary requirements/
 constraints and broken down objectives, it became easy to anchor our diverging 
 and establish a list of parameters from those two (respectively). This allowed 
-us to use attribute listing and reverse brainstorming to develop a better 
+us to use \myuline{attribute listing} and \myuline{reverse brainstorming} to develop a better 
 understanding of the parameters, and generate new features based on them.
 
-Diverging sprint analysis
-Designs and crit extracts
+% TODO: Diverging sprint analysis
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth/2]{images/parameterization.png}
+    \hfill
+    \caption{An extract from my diverging sprint team's Candidate Designs and Tools Critique, showing the use of design parameters in the context of \uline{reverse brainstorming} \cite{candidatestools}.}
+\end{figure}
+
 \subsection{Praxis I Converging - Design Critique and Categorization}
 During the converging sprint, I was able to expand my personal process to 
 incorporate diverging in a way that matched the “parameterization” approach 
@@ -161,9 +180,16 @@ different way. However, there were some that could be grouped together along
 similar functions, and then compared within the category with derived metrics 
 appropriate for that category’s function. Once the categories were developed, 
 a genetic algorithm was employed, pulling together feature assessment 
-(Pugh chart), recombination (MORPH chart), and ultimate category candidate 
+(\myuline{Pugh chart}), recombination (\myuline{MORPH chart}), and ultimate category candidate 
 prototyping and comparison to develop one singular candidate from a highly 
 diverse pool.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth/2]{images/algorithm.png}
+    \hfill
+    \caption{An extract from my converging sprint notes. Though slightly illegible, it shows the development of category metrics (top-left) and feature recombination (centre) \cite{designcrit}.}
+\end{figure}
 
 \subsection{Praxis II Control Flow Diagram}
 When developing prototypes that are meant to enact a certain process (“process 
@@ -171,7 +197,11 @@ prototypes”), it is often useful to lay out the process before any development
 occurs. This is especially true for technological prototypes, like programs. 
 Starting from the most top-level “vision” of the prototype (some input produces 
 some output) and breaking that down to the low-level “pseudocode” makes 
-prototyping complex systems far easier.
+prototyping complex systems far easier. In essence, it is a framing process that
+leads directly to development, which is extremely useful in practice.
+
+% TODO: photo
+
 \subsection{Praxis II Hardware Prototype}
 As mentioned in the position section, I have a certain bias towards technical 
 prototypes due to my interest in the field and past experience. However, I 
@@ -183,6 +213,10 @@ feels like I’ve actually solved the problem and completed the engineering
 design process, as opposed to in Praxis I, where sprints were disjointed and 
 never used the same topic twice.
 
+% TODO: photo
+
+\pagebreak
+
 \section{Process}
 The way an opportunity is handled (where framing starts, how diverging/converging 
 start) depend on the scope of the “problem statement” interpreted from the 
@@ -190,9 +224,68 @@ stakeholder’s lived experience. This process is largely derived from the
 parameter optimization approach, and incorporates the category genetic algorithm, 
 both derived from what I learned in Praxis I.
 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{images/process.png}
+    \hfill
+\end{figure}
+
+\pagebreak
 \section{Tools, Models, and Frameworks}
 
-\subsection{}
+\subsection{Attribute Listing}
+
+After framing the problem down to the metric scope, the desired functions (and thus features)
+of successful candidate designs can be listed. In this context, they are called attributes, and
+parameters are built directly off of these: parameters control the "level" (more or less) of an attribute's
+contribution to the ultimate design.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth/2]{images/attributelisting.png}
+    \hfill
+    \caption{An example of attribute listing performed in the Praxis I diverging sprint \cite{candidatestools}.}
+\end{figure}
+
+By using a “first principles” approach to divergence based solely on the requirements model (as opposed 
+to abstract brainstorming), my teams were able to explore the entire breadth of the opportunity. However, 
+this tool also has the potential to be restrictive. For group members who might prefer abstract imagination, their 
+ideas did not necessarily fit this model.
+
+The straightforwardness and linearity of this tool allows high efficient during the 
+diverging process. There is also an increased sense of accomplishment, more so than when using 
+other, less straightforward tools.
+
+This tool is particularly useful at the start of diverging, as it helps to lay out the basis 
+for a set of potential candidate designs. You can then adapt and branch off in order to develop 
+more unique and imaginative ideas.
+
+\subsection{Reverse Brainstorming}
+
+The goal of reverse brainstorming is to change how a problem statement is worded from how it can be 
+solved to how it can be caused. After different ways to cause the problem are identified, design 
+functions that address each cause are proposed and potential features combined in order to target multiple factors 
+in one candidate design.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth/2]{images/reversebrainstorm.png}
+    \hfill
+    \caption{An example of reverse brainstorming performed in the Praxis I diverging sprint \cite{candidatestools}.}
+\end{figure}
+
+Overall, reverse brainstorming is a helpful tool to use after doing some initial brainstorming, specifically 
+in situations where the scope of an opportunity may stifle creativity or lead to anchoring. Reverse 
+brainstorming is also useful for organizing candidate designs based on their function and for combining 
+features of different candidate designs to target a variety of contributing factors related to the opportunity. 
+Reverse brainstorming is also useful to expand scope by realize that there are many 
+other factors that might be contributing to the problem, other than those initially identified during framing.
+
+\subsection{Pugh Chart}
+
+
+
+\subsection{MORPH Chart}
 
 \pagebreak
 
