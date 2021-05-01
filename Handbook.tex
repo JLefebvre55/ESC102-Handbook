@@ -1,0 +1,203 @@
+\documentclass{report}
+\usepackage{contour}
+\usepackage{ulem}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{geometry}
+\geometry{
+letterpaper,
+left=1in,
+right=1in,
+bottom=1in,
+top=1in,
+}
+
+\renewcommand{\ULdepth}{1.5
+pt}
+\contourlength{0.8pt}
+
+\newcommand{\myuline}[1]{%
+  \uline{\phantom{#1}}%
+  \llap{\contour{white}{#1}}%
+}
+
+\renewcommand{\baselinestretch}{1.5}
+
+\begin{document}
+
+\begin{titlepage}
+    \begin{center}
+    \vspace*{1cm}
+
+    \textbf{Praxis II - Student Engineering Handbook}
+
+    \vspace{0.5cm}
+    \textit{ESC102 Final Assessment}
+
+    \vspace{1.5cm}
+
+    J. Lefebvre\\\small{jayden.lefebvre@mail.utoronto.ca}\\\small{Student Number: 1006861344}
+
+    \vfill
+
+    \vspace{0.8cm}
+
+    Engineering Science\\
+    Faculty of Applied Science and Engineering\\
+    University of Toronto\\
+    Tuesday April 30th, 2021
+
+    \end{center}
+\end{titlepage}
+
+\tableofcontents
+\pagebreak
+
+\section{Introduction}
+The purpose of this handbook is to document my learning and position 
+as an engineer and designer at this point in my development. It will 
+accomplish this by documenting my design products, and the tools/
+models/frameworks I have used to achieve those, as well as reflecting 
+on each in terms of their utility to future design work. In addition, 
+this handbook documents my personal engineering design process as it 
+stands currently.
+
+This handbook is created in the hopes that it will be of some design 
+assistance to future me. To navigate this document, refer to the Table 
+of Contents.
+\section{Position}
+My approach to designing is best described as top-down: I consider 
+myself a big-picture person, so when confronted with a problem, I am 
+often able to see the larger solution before imagining its subcomponents. 
+I have found that this is highly dependent on how related the problem 
+is to both my existing design work as well as my interests; the closer, 
+the more easily I can conceive a solution. In this way, so long as I am 
+able to properly frame a problem and break it down into its component 
+parameters (more on that in Process), the more easily, reliably, and 
+rigorously I am able to diverge and converge on solution features.
+
+Since the way I approach problems is “solution-first”, that often puts 
+me in an interesting position when it comes to teamwork. Often during 
+the first team meeting after being presented a problem, I will present 
+my potential solution, and encourage my team to play with the parameters 
+conceptually. While this does accelerate the decision-making process and 
+put me in a position of leadership I am comfortable with, this also means 
+that some team members might be uncomfortable with sharing ideas non-tangential 
+to the initially-proposed solution, reducing the overall scope of diverging. 
+In my opinion, this is the ultimate design paradox: the wider the scope, 
+the better you can diverge, but the less features and parameters are 
+shared between designs, and thus it becomes very difficult to converge 
+on one feature set on a detailed level.
+
+I also have certain biases when it comes to problem-solving. Since I have 
+been working with technology (programming, electronics, etc.) creatively 
+for most of my life, I am inclined to use it to develop solutions even 
+if it means increasing the complexity. My interest in technology is one 
+of the main reasons I decided to become an engineer.
+
+One of the most interesting things I’ve learned since coming to EngSci 
+last september has been the value of rigor. I’ve learned that despite being 
+able to solve a problem, it is just as important to be able to show how 
+you got there, and why each decision was made. This is especially true when 
+it comes to open-source work, which I am passionate about, as it allows 
+people to contribute to projects collaboratively and freely.
+
+Finally, one of the first lectures of Praxis II asked the question: “Do you 
+consider yourself as more of an engineering student or a student engineer?” 
+This was thought-provoking for me, as although I have been academically 
+successful for my entire life, it wasn’t the learning that brought me joy; 
+it was instead being able to apply what I’ve learned to a real-world problem 
+that interested me. This has led me to focus more on projects, real-world 
+problems, design teams, and startups in my first year than I had anticipated:
+\begin{itemize}
+    \item Electronics Engineer w/ UofT Hyperloop Team, working with sensors, 
+    protocols, state machines
+    \item Project Lead w/ UofT CloudClub, teaching other eng. students professional 
+    web dev. techniques, frameworks, and practices
+    \item Founded UofT Agritech, developing an autonomous controlled-environment 
+    agriculture solution, going to compete in the NASA/CSA Deep Space Food Challenge
+\end{itemize}
+
+\section{Products}
+\subsection{Praxis I PER}
+This was my first attempt at engineering design. Since taking a number of 
+research and writing composition courses in highschool, I had become accustomed 
+to a certain style of writing. Although this writing style translated well 
+into claim-argument form, I failed to meet some of the key targets of engineering 
+design, including employing the tools and frameworks provided for comparative 
+analysis of design candidates. The assessment of my performance reflected this.
+
+
+
+PER extracts
+\subsection{Praxis I Framing - Design Brief}
+This was my second attempt at engineering design, and I took the framing 
+failures from the PER and applied new strategies to avoid those pitfalls. 
+I had gained a more thorough understanding of the FDCR process. I was also 
+able to apply my passions for both plants and technology towards this design 
+brief, leading to a greater degree of personal investment, which I believe 
+is key to good framing.
+
+Framing sprint analysis
+Design brief extracts
+\subsection{Praxis I Diverging - Candidate Design Parameterization}
+During this sprint, I began to form the basis for my personal engineering 
+design process. Since the design brief provides both the necessary requirements/
+constraints and broken down objectives, it became easy to anchor our diverging 
+and establish a list of parameters from those two (respectively). This allowed 
+us to use attribute listing and reverse brainstorming to develop a better 
+understanding of the parameters, and generate new features based on them.
+
+Diverging sprint analysis
+Designs and crit extracts
+\subsection{Praxis I Converging - Design Critique and Categorization}
+During the converging sprint, I was able to expand my personal process to 
+incorporate diverging in a way that matched the “parameterization” approach 
+I had already developed. My converging sprint team found that the candidate 
+designs generated during the previous sprint were hard to compare along the 
+general metrics of success provided by the design brief. This was due to the 
+function differences - each design approached the problem in a radically 
+different way. However, there were some that could be grouped together along 
+similar functions, and then compared within the category with derived metrics 
+appropriate for that category’s function. Once the categories were developed, 
+a genetic algorithm was employed, pulling together feature assessment 
+(Pugh chart), recombination (MORPH chart), and ultimate category candidate 
+prototyping and comparison to develop one singular candidate from a highly 
+diverse pool.
+
+\subsection{Praxis II Control Flow Diagram}
+When developing prototypes that are meant to enact a certain process (“process 
+prototypes”), it is often useful to lay out the process before any development 
+occurs. This is especially true for technological prototypes, like programs. 
+Starting from the most top-level “vision” of the prototype (some input produces 
+some output) and breaking that down to the low-level “pseudocode” makes 
+prototyping complex systems far easier.
+\subsection{Praxis II Hardware Prototype}
+As mentioned in the position section, I have a certain bias towards technical 
+prototypes due to my interest in the field and past experience. However, I 
+find there is a huge amount of payoff in developing a genuinely applicable 
+prototype that could legitimately be used to solve the problem (call it a 
+“coarse solution”) as compared to other prototypes (you know the ones, the 
+cardboard-and-duct-tape ones). If I am able to develop a real solution, it 
+feels like I’ve actually solved the problem and completed the engineering 
+design process, as opposed to in Praxis I, where sprints were disjointed and 
+never used the same topic twice.
+
+\section{Process}
+The way an opportunity is handled (where framing starts, how diverging/converging 
+start) depend on the scope of the “problem statement” interpreted from the 
+stakeholder’s lived experience. This process is largely derived from the 
+parameter optimization approach, and incorporates the category genetic algorithm, 
+both derived from what I learned in Praxis I.
+
+\section{Tools, Models, and Frameworks}
+
+\subsection{}
+
+\pagebreak
+
+\bibliographystyle{IEEEtran}
+
+\bibliography{references}
+
+\end{document}
